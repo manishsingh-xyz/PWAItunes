@@ -1,0 +1,8 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://img-fotki.yandex.ru/get/195561/64060800.ba5d/0_3b5118_67adc3e4_orig');
+  background-size: cover;
+}

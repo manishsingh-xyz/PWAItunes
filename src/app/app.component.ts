@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'iTunes Search ';
+  searchedItem = '';
+  selectedItem = 'music';
+  
+  items = [
+    { value: 'music', viewValue: 'Music & Movies' },
+    { value: 'app', viewValue: 'Apps' }
+  ];
 }
