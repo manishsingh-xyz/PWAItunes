@@ -3,6 +3,32 @@
 }
 
 .example-header-image {
-  background-image: url('https://img-fotki.yandex.ru/get/195561/64060800.ba5d/0_3b5118_67adc3e4_orig');
+  background-image: url('http://www.matmatah.com/wp-content/uploads/2015/09/itunes1.png');
   background-size: cover;
+}
+
+
+/*Repeat Element*/
+.sponsor {
+    text-align: left;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     max-width: 600px;
+}
+
+.sponsor img {
+    border-radius: 4px;
+}
+
+img {
+    border: 0;
 }

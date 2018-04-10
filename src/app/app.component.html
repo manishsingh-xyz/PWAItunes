@@ -6,8 +6,8 @@
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <p>Search Your Favourite Music, Movies & Apps</p>
-    <!-- <mat-card-title>Search Your Favourite Music, Movies & Apps </mat-card-title> -->
+    <!--<p>Search Your Favourite Music, Movies & Apps</p>-->
+     <mat-card-title>Search Your Favourite Music, Movies & Apps </mat-card-title> 
   </mat-card-header>
   <mat-card-content>
         <mat-form-field class="example-full-width">
@@ -21,7 +21,20 @@
           </mat-select>
         </mat-form-field>
         <div class="button-row">
-          <button mat-raised-button color="primary">Search</button>
+          <button mat-raised-button color="primary" (click)="SearchItunes(searchedItem,selectedItem)">Search</button>
         </div>
   </mat-card-content>
 </mat-card>
+
+  <mat-card *ngFor="let data of iData; let i=index">
+      <div class="col-lg-6" (click)=getFullDetails(data.id)>
+          <div class="well sponsor">
+              <span style="float: left; margin-right: 15px;"><img src="https://image.tmdb.org/t/p/original{{ data.poster_path }}" width="170" height="250"></span>             
+              <h4 style="margin-bottom: 0.4em;">{{ data.title }}</h4>
+              <div class="clearfix">
+              <p> {{ data.overview }} </p>
+              </div>
+          </div>
+      </div>
+
+  </mat-card>

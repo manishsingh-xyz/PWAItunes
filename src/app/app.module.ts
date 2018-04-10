@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
+import { ItunesdataService } from './itunesdata.service';
+import { HttpClientModule }    from '@angular/common/http';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -22,6 +24,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
@@ -29,7 +32,7 @@ import { environment } from '../environments/environment';
     MatButtonModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [ItunesdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
