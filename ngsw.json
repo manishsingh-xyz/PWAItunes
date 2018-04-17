@@ -10,7 +10,7 @@
         "/PWAItunes/favicon.ico",
         "/PWAItunes/index.html",
         "/PWAItunes/inline.318b50c57b4eba3d437b.bundle.js",
-        "/PWAItunes/main.a901d2ff3a0e2c85d03f.bundle.js",
+        "/PWAItunes/main.d4a18e3506c78b33b790.bundle.js",
         "/PWAItunes/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
         "/PWAItunes/styles.806e9b9eccf9468810ec.bundle.css"
       ],
@@ -20,17 +20,24 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
-      "urls": [],
+      "urls": [
+        "/PWAItunes/assets/icon-128x128.png",
+        "/PWAItunes/assets/icon-256x256.png",
+        "/PWAItunes/assets/icon-512x512.png"
+      ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
     "/PWAItunes/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "/PWAItunes/main.a901d2ff3a0e2c85d03f.bundle.js": "0a3471e4e5e24082b2970003c9cf2cf1f8c868cd",
+    "/PWAItunes/assets/icon-128x128.png": "35c2a76ccd305ec156a96a568b28f94ebeec1070",
+    "/PWAItunes/main.d4a18e3506c78b33b790.bundle.js": "6b8c2c53bf52b5883084f77d9ac434b591f79b78",
+    "/PWAItunes/assets/icon-256x256.png": "01ee61da270cfc6b9275ca0bc993f1ac15238846",
     "/PWAItunes/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
+    "/PWAItunes/assets/icon-512x512.png": "c91ea198d17c16ee8ec6eb3378d6de0b9108aab5",
     "/PWAItunes/styles.806e9b9eccf9468810ec.bundle.css": "2d54a334bf71713644c3c2f6aeed7da1ab2a647c",
     "/PWAItunes/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/PWAItunes/index.html": "172fd046c29f59398e0ce2f6616dd544496e3d67"
+    "/PWAItunes/index.html": "25dc9189802e16a56f494b247f096c8bebed5dd6"
   }
 }
