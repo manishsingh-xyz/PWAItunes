@@ -15,8 +15,6 @@ interface APIresponse {
 
 export class HomeComponent implements OnInit {
 
- 
-
   ngOnInit() {
   }
 
@@ -30,36 +28,25 @@ export class HomeComponent implements OnInit {
   mode = 'indeterminate';
   value = 50;
   loader: boolean = false;
+  noData: boolean = false;
 
   items = [
     { value: 'movie', viewValue: 'Music & Movies' },
     { value: 'software', viewValue: 'Apps' }
   ];
 
-//   this.sidebarService.getSidebar().subscribe((sidebar: Sidebar) => {
-//     this.sidebar = sidebar.content;
-// });
-
-
   SearchItunes(): void {
+      this.iData  = [];
       this.loader = true;  
+      this.noData = false;
       this.itunesdataservice.getData(this.searchedItem,this.selectedItem)
-              .subscribe((res: APIresponse) => {
-                // this.sidebar = sidebar.content;
+            .subscribe((res: APIresponse) => {
                 this.loader = false;
-                 this.iData = res.results;
-                 
-                 console.log("movie",this.iData);
-             });
-            
-            
-            // .subscribe((res) => {
-            //     console.log(res);              
-            //     this.iData = res.results;
-            //   }
-            // );
+                if(res.results.length === 0){
+                  this.noData = true;
+                }                 
+                this.iData = res.results;
+                console.log("movie",this.iData);
+            });
   } 
-
-  
-
 }
