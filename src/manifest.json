@@ -1,0 +1,9 @@
+{
+    "name": "Progressive Web Movie",
+    "short_name": "Movie Search",
+    "description": "A movie search app to search your favorite movies",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#673ab7"
+}
